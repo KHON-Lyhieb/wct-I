@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 25px;
+}
+
+.contact {
+  margin: auto;
+  border-radius: 15px;
+  width: 30%;
+  padding: 20px;
+  background-color: #cecece;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.label-input label {
+  font-size: 1.2rem;
+}
+
+.label-input input,
+.label-input textarea {
+  font-size: 0.9rem;
+  padding: 8px;
+}
+
+.button {
+  text-align: center;
+}
+
+.button input {
+  font-size: 0.9rem;
+  padding: 10px 24px;
+  color: #fff;
+  background-color: #06a96d;
+}

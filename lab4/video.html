@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/video.css" />
+    <title>Lyhieb | Lab4 - Video</title>
+  </head>
+  <body>
+    <main>
+      <h1>Video in HTML</h1>
+
+      <h2>Video 1: Internal video</h2>
+      <section class="video-1">
+        <video width="320" height="240" controls autoplay muted loop>
+          <source src="videos/mov_bbb.mp4" type="video/mp4" />
+          <source src="videos/mov_bbb.ogv" type="video/ogg" />
+          <p>Your browser doesn't support HTML5 video.</p>
+        </video>
+      </section>
+
+      <h2>Video 2: YouTube video</h2>
+      <section class="video-2">
+        <iframe
+          width="320"
+          height="240"
+          src="https://www.youtube.com/embed/Ui2Pl1e4qd8"
+          title="LIFE OF PROGRAMMER FUNNY VIDEO by ALL IN ONE Every"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header .title {
+  text-align: center;
+  padding: 1em;
+}
+
+header .title h1 {
+  font-size: 1.2rem;
+}
+
+header .title p {
+  font-size: 0.7rem;
+}
+
+header .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+}
+
+header .gallery .group {
+  width: 100%;
+}
+
+header .gallery .group img {
+  padding: 0.2rem;
+  width: 100%;
+  height: auto;
+}
+
+/* =============== Responsive ===============*/
+@media screen and (min-width: 768px) {
+  /* tablets */
+  header .gallery {
+    flex-direction: row;
+  }
+
+  header .gallery .group {
+    width: 49.5%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* laptops/desktops */
+  header .gallery {
+    flex-direction: row;
+  }
+
+  header .gallery .group {
+    width: 24.5%;
+  }
+}

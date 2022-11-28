@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/link.css" />
+    <title>Lyhieb | Lab4 - Link</title>
+  </head>
+  <body>
+    <article class="wrap-artical">
+      <h1>How to use Link in HTML</h1>
+
+      <nav>
+        <p>Page contents</p>
+        <ul>
+          <li><a href="#use-#top">Using #top or #bottom</a></li>
+          <li><a href="#use-id-selector">Using the id selector</a></li>
+          <li><a href="#example">Complete HTML page code example</a></li>
+        </ul>
+      </nav>
+
+      <section id="use-#top">
+        <h2>Using #top or #bottom</h2>
+        <p>
+          The following examples use #top and #bottom with the
+          <mark>&lt;a&gt; tag</mark> and <mark>href attribute</mark> to link to
+          that section of the page. This method is similar to using "id," but
+          you don't have to pick a specific element. Click "Top" or "Bottom" in
+          the <i>Results</i> section to see what happens.
+        </p>
+        <div class="result">
+          <strong>Result:</strong>
+          <a href="#">Go Top</a>
+          <a href="#bottom">Go Bottom</a>
+        </div>
+      </section>
+
+      <section id="use-id-selector">
+        <h2>Using the id selector</h2>
+        <p>
+          In <mark>CSS</mark>, "<mark>id</mark>" is a selector that is used to
+          designate an area that a link should point to, similar to
+          <mark>anchor</mark> in <mark>HTML</mark>. The nice thing about using
+          id is you can create a link to any <mark>element</mark> on the page,
+          rather than only the top or bottom. In the following sections, we show
+          you how to apply id to an <mark>HTML tag</mark>, and then how to link
+          to it. The following two examples link to the opening paragraph at the
+          top of this page.
+        </p>
+      </section>
+
+      <section id="example">
+        <h2>Complete HTML page cade example</h2>
+        <p>
+          The following code shows how both the #top and #bottom anchors and the
+          id selector can all be used on the same page.
+        </p>
+      </section>
+
+      <div id="bottom"></div>
+    </article>
+  </body>
+</html>

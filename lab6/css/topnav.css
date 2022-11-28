@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrap-nav {
+  position: relative;
+}
+
+section {
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7em;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+}
+
+.show-menu {
+  background-color: #111;
+}
+
+.active {
+  width: 5em;
+  background-color: #06a96d;
+}
+
+.hide-menu {
+  background-color: #111;
+  max-height: 0;
+  transition: max-height 0.6s;
+  overflow: hidden;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-icon {
+  position: absolute;
+  right: 0;
+  padding: 1.4em 0.9em;
+}
+
+/* change active backround width & show all menu wheh menu-icon clicked (checked) */
+.nav-toggle:checked ~ nav .hide-menu {
+  max-height: 15rem;
+  transition: max-height 1s;
+}
+
+.nav-toggle:checked ~ nav .active {
+  width: 100%;
+}
+
+/* set backgrond and change menu-icon color when it clicked (checked) */
+.nav-toggle:checked ~ .nav-toggle-icon {
+  background: #ddd;
+}
+
+.nav-toggle:checked ~ .nav-toggle-icon span,
+.nav-toggle:checked ~ .nav-toggle-icon span::before,
+.nav-toggle:checked ~ .nav-toggle-icon span::after {
+  background: #111;
+}
+
+/* Created a menu icon */
+.nav-toggle-icon span,
+.nav-toggle-icon span::before,
+.nav-toggle-icon span::after {
+  display: block;
+  background: #ddd;
+  height: 2px;
+  width: 1.2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-icon span::before,
+.nav-toggle-icon span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-icon span::before {
+  bottom: 5px;
+}
+
+.nav-toggle-icon span::after {
+  top: 5px;
+}
+
+/* =============== Responsive ===============*/
+@media screen and (min-width: 992px) {
+  /* for desktop */
+  .nav-toggle-icon {
+    display: none;
+  }
+
+  nav {
+    background-color: #111;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  /* reset max-height to default */
+  .hide-menu {
+    max-height: none;
+  }
+}
+
+/* == Clear fix class == */
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

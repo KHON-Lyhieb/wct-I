@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  padding: 0.5em 0;
+}
+
+/* header */
+header {
+  width: 100%;
+  background-color: #111;
+}
+
+header ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+header li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 0.8em;
+}
+
+header li a:hover {
+  background: #333;
+}
+
+/* wrapper class of aside and main */
+.contener {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* aside area */
+aside {
+  width: 100%;
+  padding-top: 1em;
+  background-color: #b4b4b4;
+}
+
+aside strong {
+  display: block;
+}
+
+aside img.profile {
+  width: 8rem;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+aside img {
+  width: 100%;
+  height: 10em;
+  object-fit: cover;
+}
+
+/* main area */
+main {
+  width: 100%;
+  padding-top: 1em;
+}
+
+main h2 {
+  text-transform: uppercase;
+}
+
+main p {
+  padding: 0.7em 0;
+}
+
+main img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 2em;
+  background-color: #ebebeb;
+  text-align: center;
+  padding: 0.4em;
+}
+
+/* Utilities class */
+.card {
+  background-color: #fff;
+  border: 1px solid;
+  padding: 0.2em 0.7em;
+  box-shadow: 5px 5px 5px #bebebe;
+  margin: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 992px) {
+  /* Laptop and desktop */
+
+  /* header */
+  header li {
+    float: left;
+  }
+
+  /* contener */
+  aside {
+    width: 50%;
+  }
+
+  main {
+    width: 50%;
+  }
+}

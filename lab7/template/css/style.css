@@ -1,0 +1,17 @@
+.img-custom-container {
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.img-custom {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.img-custom:hover {
+  transform: scale(1.15);
+}

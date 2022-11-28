@@ -1,0 +1,12 @@
+body {
+  background: #e5ecea;
+}
+
+/* ICON in form input */
+.i__input {
+  color: #b5b2b2;
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 4px;
+}
