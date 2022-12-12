@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Bar</title>
+    <!-- Bootstrap Icon Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <nav
+        class="d-flex flex-column flex-shrink-0 bg-dark px-3"
+        style="width: 12rem; height: 100vh"
+      >
+        <!-- Nav_header -->
+        <a class="fs-3 fw-bold text-white text-decoration-none pt-3" href="#"
+          >Menu</a
+        >
+        <hr class="text-white" />
+        <!-- Nav_submenu  -->
+        <ul class="nav nav-pills flex-column mb-auto fs-5">
+          <li class="nav-item">
+            <a class="nav-link text-white ps-0" href="#">
+              <i class="bi bi-house pe-none me-2"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white ps-0"
+              href="#dashboardCollapse"
+              data-bs-toggle="collapse"
+            >
+              <i class="bi bi-speedometer2 pe-none me-2"></i>
+              Dashboard
+            </a>
+            <!-- dashboard-collapse -->
+            <ul class="collapse" id="dashboardCollapse">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Item 1</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Item 2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-0" href="#">
+              <i class="bi bi-table pe-none me-2"></i>
+              Orders
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-0" href="#">
+              <i class="bi bi-bootstrap pe-none me-2"></i>
+              Bootstrap
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-0" href="#">
+              <i class="bi bi-grid pe-none me-2"></i>
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white ps-0" href="#">
+              <i class="bi bi-people pe-none me-2"></i>
+              Customers
+            </a>
+          </li>
+        </ul>
+        <!-- Nav__account -->
+        <hr class="text-white" />
+        <footer class="dropdown shadow mb-3">
+          <a
+            href="#"
+            class="dropdown-toggle text-white text-decoration-none"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://github.com/mdo.png"
+              alt="profile"
+              class="rounded-circle me-2"
+              width="40"
+              height="40"
+            />
+            <strong>Momo</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li>
+              <a href="#" class="dropdown-item">New Project...</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item">Settings</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-item">Profile</a>
+            </li>
+            <li><hr class="dropdown-divider text-white" /></li>
+            <li>
+              <a href="#" class="dropdown-item">Sign out</a>
+            </li>
+          </ul>
+        </footer>
+      </nav>
+      <main class="px-3">
+        <h2>Left Sidebar with Submenus</h2>
+        <p class="fs-5">
+          An example 2-level sidebar with collasible menu items. The menu
+          funcions like an 'accordion' where only a single menu is be open at a
+          time. While the sidebar itself is not toggle-able, it does
+          responsively shrink in width on smaller screens.
+        </p>
+
+        <h3>Responsive</h3>
+        <p>
+          shrinks in width, hides text labels and collapse to icons only on
+          mobile
+        </p>
+      </main>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
